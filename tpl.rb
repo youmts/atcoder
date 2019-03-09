@@ -1,16 +1,7 @@
-class Main
-  def self.main lines
-    p lines[1]
-    lines[1]
-      .split(" ")
-      .map {|x| x.to_i}
-      .sum
-  end
+def lsp
+  STDIN.readline.split.map(&:to_i)
 end
 
-if $0 == __FILE__
-  $stdout = open('/dev/null', 'w')
-  r = Main.main STDIN.readlines
-  $stdout = STDOUT
-  puts r
-end
+exit if $0 != __FILE__
+
+p lsp
