@@ -21,6 +21,7 @@ class TestMain < Test::Unit::TestCase
     6
     EOS
   end
+
   def test_main2
     p __method__
     result = Main.main(<<~EOS.split(/\R/))
@@ -40,6 +41,7 @@ class TestMain < Test::Unit::TestCase
     15
     EOS
   end
+
   def test_main3
     p __method__
     result = Main.main(<<~EOS.split(/\R/))
@@ -51,9 +53,10 @@ class TestMain < Test::Unit::TestCase
     1
     EOS
   end
+
   def test_main4
     p __method__
-    n = 5-1
+    n = 100000-1
     input = ["#{n+1} #{n}"]
     input += [*1..n].map {|x| "#{x} #{x+1}"}
 
