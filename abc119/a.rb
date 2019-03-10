@@ -3,5 +3,6 @@ def cout(*x); puts x.join(" ") end
 
 exit if $0 != __FILE__
 
-n, *x = cin
-cout n, *x
+require 'date'
+
+cout Date.parse(gets) <= Date.parse('2019/04/30') ? 'Heisei' : 'TBD'
