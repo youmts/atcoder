@@ -1,3 +1,5 @@
+# https://atcoder.jp/contests/exawizards2019/tasks/exawizards2019_b
+
 def cin; gets.split.map(&:to_i) end
 def cout(*x); puts x.join(" ") end
 
