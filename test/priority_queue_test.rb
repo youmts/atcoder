@@ -10,6 +10,14 @@ class PriorityQueueTest < Test::Unit::TestCase
     assert_equal 0, q.pop
   end
 
+  def test_block_compare
+    q = PriorityQueue.new {|a, b| a[1] <=> b[1]}
+    q.push([1000, 0])
+    q.push([100, 1])
+    assert_equal [100, 1], q.pop
+    assert_equal [1000, 0], q.pop
+  end
+
   def test_push_return_self
     q = PriorityQueue.new
     assert_equal q, q.push(0)
