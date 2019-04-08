@@ -8,6 +8,7 @@ class PriorityQueueTest < Test::Unit::TestCase
     q.push(1)
     assert_equal 1, q.pop
     assert_equal 0, q.pop
+    assert_equal nil, q.pop
   end
 
   def test_block_compare
@@ -42,5 +43,11 @@ class PriorityQueueTest < Test::Unit::TestCase
         l.sort.reverse.each {|x| assert_equal x, q.pop}
       end
     end
+  end
+
+  def test_logn
+    q = PriorityQueue.new
+    (1..100000).each {|x| q.push(x)}
+    100000.times {q.pop}
   end
 end

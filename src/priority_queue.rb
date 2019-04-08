@@ -33,6 +33,7 @@ class PriorityQueue
     end
 
     def pop_heap
+      return @heap.pop if @heap.length <= 1
       ret = @heap[0]
       @heap[0] = @heap.pop
       length = @heap.length
