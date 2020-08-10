@@ -1,3 +1,5 @@
+# https://atcoder.jp/contests/arc071/tasks/arc071_d
+
 def cin; gets.split.map(&:to_i) end
 def cout(*x); puts x.join(" ") end
 

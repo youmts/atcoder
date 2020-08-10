@@ -1,3 +1,5 @@
+# https://atcoder.jp/contests/agc031/tasks/agc031_a
+
 def cin; gets.split.map(&:to_i) end
 def cout(*x); puts x.join(" ") end
 

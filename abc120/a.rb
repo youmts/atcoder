@@ -1,3 +1,5 @@
+# https://atcoder.jp/contests/abc120/tasks/abc120_a
+
 class Main
   def self.main lines
     a,b,c = lines[0].split.map(&:to_i)

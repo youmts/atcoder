@@ -1,3 +1,5 @@
+# https://atcoder.jp/contests/abc120/tasks/abc120_c
+
 class Main
   def self.main lines
     s = lines[0].split("")

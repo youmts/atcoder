@@ -1,3 +1,5 @@
+# https://atcoder.jp/contests/abc121/tasks/abc121_b
+
 class Main
   def self.main lines
     n,m,c = lines.shift.split.map(&:to_i)

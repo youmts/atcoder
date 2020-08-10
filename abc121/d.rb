@@ -1,3 +1,5 @@
+# https://atcoder.jp/contests/abc121/tasks/abc121_d
+
 include Math
 
 class Main
